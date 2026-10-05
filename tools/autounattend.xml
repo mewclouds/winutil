@@ -352,9 +352,6 @@ $scripts = @(
         reg.exe add "HKCU\Software\Microsoft\Windows\CurrentVersion\Start" /v ShowRecentList /t REG_DWORD /d 0 /f;
         reg.exe add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v Start_TrackDocs /t REG_DWORD /d 0 /f;
     };
-    {
-        Restart-Computer -Force;
-    };
 );
 
 &amp; {
